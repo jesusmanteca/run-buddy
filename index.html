@@ -54,35 +54,39 @@
             </p>
             <!-- Add a form element -->
             <form action="">
+               
                 <!-- Name label -->
                 <label for="name">
                     Enter Full Name:
                 </label>
-                <br>
                 <input type="text" placeholder="Your Name" name="name" id="name"/>
+                
                 <!-- E-mail label -->
-                <br>
                 <label for="email">
                     Enter E-mail Address:
                 </label>
-                <br>
-                <input type="text" placeholder="Your E-Mail Address" name="email" id="email"/>
+                <input type="email" placeholder="Your E-Mail Address" name="email" id="email"/>
+               
                 <!-- Phone Number -->
-                <br>
                 <label for="phone">
                     Enter a telephone number:
                 </label>
-                <br>
-                <input type="text" placeholder="Phone Number" name="phone" id="phone"/>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone"/>
 
                 <p>
                     Have you worked with a trainer before?
-                    <br>
                     <input type="radio" name="trainer-confirm" id="trainer-yes" />
                     <label for="trainer-yes">Yes 👍</label>
                     <input type="radio" name="trainer-confirm" id="trainer-no" />
                     <label for="trainer-no">No 👎</label>
                 </p>
+                <p>
+                    I acknowledgde that I am at least 18 years of age.
+                    <input type="checkbox" name="age-confirm" id="checkbox" />
+                </p>
+                <button type="submit">
+                    Get running!
+                </button>
             </form>
         </div>
     </section>
