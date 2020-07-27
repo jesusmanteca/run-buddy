@@ -173,11 +173,13 @@ header {
 
 
   .section-title {
-    font-size: 55px;
+    font-size: 55px;   
+    display: inline-block;
     color: #024e76;
     margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    /* We chose to use the inline-block 
+    padding: 0 100px 20px 100px;    
+    border-bottom: 3px solid;
+    /* We chose to use the display: inline-block 
     value instead of the inline value so 
     it can have the best of both worlds. 
     It's now an inline element, but things 
@@ -186,8 +188,6 @@ header {
     text-align property from before, 
     we now have a center-aligned heading 
     with an appropriately sized border: */
-    display: inline-block;
-    border-bottom: 3px solid;
   }
   
   /* We separated everything out from the style
@@ -242,7 +242,14 @@ header {
     background: #024e76;
     color: #fce138;
     overflow: auto;
-    /* In this case, 
+    /* 
+    Which CSS property allows 
+    the parent element to display its 
+    CSS properties by stretching its 
+    dimensions to physically contain its 
+    child elements?
+
+    In this case, 
     we floated both elements 
     (the <img> and <div>), which 
     means its parent element—the 
@@ -270,10 +277,16 @@ header {
   .text-left {
     text-align: left;
   }
+  /* This is an example of 
+  utility class, can be 
+  applied all over */
   
   .text-right {
     text-align: right;
   }
+   /* This too is an example of 
+  utility class, can be 
+  applied all over */
 
   .trainer-bio h3 {
     font-size: 32px;
@@ -290,4 +303,14 @@ header {
     font-size: 17px;
     line-height: 1.3;
   }
-  And there we go
+  /* class attributes for the REACH OUT SECTION */
+  .contact {
+    text-align: center;
+    background: #024e76;
+  }
+
+  /* This is the Reach Put title, we could have also put on an id but this does the trick too */
+  .contact h2 {
+    color: #fce138;
+  }
+
