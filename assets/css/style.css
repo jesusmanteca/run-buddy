@@ -284,6 +284,7 @@ header {
   .text-right {
     text-align: right;
   }
+
    /* This too is an example of 
   utility class, can be 
   applied all over */
@@ -309,7 +310,7 @@ header {
     background: #024e76;
   }
 
-  /* This is the Reach Put title, we could have also put on an id but this does the trick too */
+  /* This is the actual Reach Out title, we could have also put on an id but this does the trick too */
   .contact h2 {
     color: #fce138;
   }
@@ -345,3 +346,6 @@ header {
   
   /* REACH OUT STYLES END */
 
+  /* HERO SECONDARY - this is the Privacy Policy Page */
+
+  
