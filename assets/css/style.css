@@ -29,14 +29,7 @@ header {
     flex-wrap: wrap;
 }
 
-/* Applying style to the RUN BUDDY anchor */
-  header nav ul li a {
-    color: #fce138;
-    margin: 0 30px;
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: 22px;
-  }
+
 /* adding a hover effect over the links */
   a:hover {
     color: #fff3a3;
@@ -47,10 +40,27 @@ header {
     margin: 7px 0;
   }
 
-  header nav ul li {
-    display: inline;
+  header nav ul {
+    /* default flex direction is row */
+    flex-direction: row; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
   }
 
+  header nav ul li {
+   
+  }
+/* Applying style to the RUN BUDDY anchor, the links */
+  header nav ul li a {
+    color: #fce138;
+    text-decoration: none;
+    font-weight: lighter;
+    margin: 0 30px;
+    font-size: 1.55vw;
+  }
   header h1 {
     font-weight: bold;
     font-size: 36px;
